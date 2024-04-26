@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+    color: white;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: black;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
+    border: 3px solid gray;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #0005;
+    grid-area: content;
+    place-self: end center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid white;
+    font-size: 1rem;
+    gap: 3px;
+}
+
+ul, ul, li {
+    list-style: none;
+}
+
+.voltar {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+    transition: all 0.5s;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #0005;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 100px;
+}
+
+.headerMenu a {
+    color: inherit;
+    font-size: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 80px;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    background-image: url(principais-linguagens-de-programacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.perfil img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.perfilTexto {
+    padding: 24px;
+    filter: brightness(85%);
+}
+
+.perfilTexto h1 {
+    font-size: 50px;
+}
+
+.perfilTexto span {
+    font-size: 30px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo::before {
+    content: '<';
+    font-size: 1.74rem;
+    color:white;
+}
+
+.logo::after {
+    content: '/>';
+    font-size: 1.75rem;
+    color: white;
+}
+
+.sobreMim {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'tittle tittle'
+        'description skills';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    background-color: #1b1c1c;
+    padding-top: 50px;
+}
+
+.sobreMim p {
+    text-align: left;
+    font-size: 20px;
+    border-right: 2px solid white;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.linguagensContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.linguagensIcon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.linksContainer {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.linksIcon {
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+    transition: color 0.5s;
+}
+
+.contatos {
+    text-align: center;
+    background-color: #1b1c1c;
+}
